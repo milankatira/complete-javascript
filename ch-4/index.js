@@ -196,7 +196,8 @@ const students = [
   { name: 'Sam', grade: 65 },
   { name: 'Katie', grade: 90 }
 ];
-//const studentGrades = students.map(student => student.grade >= 90);
+const studentGrade = students.map(student => student.grade >= 90);
+console.log(studentGrade);
 //return true of false
 const studentGrades = students.filter(student => student.grade >= 90);
 console.log(studentGrades);
