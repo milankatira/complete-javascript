@@ -7,15 +7,15 @@
 // we cannot avoid month section 
 // new Date(date string)
 console.log("------------------------------------currdate------------------------")
-let currDate = new Date(); 
-console.log(currDate);
-console.log(new Date());
+// let currDate = new Date(); 
+// console.log(currDate);
 console.log("------------------------------------date to localstring--------------")
-console.log(new Date().toLocaleString());
+console.log(new Date()); //2022-10-30T04:41:54.992Z
+console.log(new Date().toLocaleString()); //10/30/2022, 10:11:54 AM
+console.log(new Date().toString()); //Sun Oct 30 2022 10:11:55 GMT+0530 (India Standard Time)
+console.log(Date.now()) //1667104915026
 console.log("------------------------------------tostring-------------------------")
-console.log(new Date().toString());
 console.log("------------------------------------date.now-------------------------")
-console.log(Date.now() )
 //milliseconds elapsed since January 1, 1970 00:00:00 UTC
 
 // new Date(year, month, ...) 
@@ -29,13 +29,13 @@ var d = new Date(2020);
 console.log(d.toLocaleString());
 
 //how to get the indivisual date
-const curDate = new Date();
-console.log(curDate.toLocaleString());
 console.log("------------------------------------individual value--------------")
-console.log(curDate.getFullYear());
-console.log(curDate.getMonth()); 
-console.log(curDate.getDate());
-console.log(curDate.getDay());
+const curDate = new Date();
+console.log(curDate.getFullYear()); //2022
+console.log(curDate.getMonth()); //9
+console.log(curDate.getDate()); //30
+console.log(curDate.getDay());  //0
+console.log(curDate.toLocaleString());
 
 console.log("-------------------------------- set individual value--------------")
 //how to set the indivisual date 

@@ -1,18 +1,59 @@
-//TODO A closure is the combination of a function bundled together 
-//TODO (enclosed) with references to its surrounding state (the lexical environment). 
-//TODO In other words, a closure gives you access to an outer function's scope from an inner function
+let count = 0;
 
-//!we are calling function y inside the function x
-function x(){
-   var a=7;
-   return function y(){
-      console.log(a);
-   }
-}
+const updateCount = () => {
+  count++;
+};
 
-//!z is a function x 
-var z=x()  
+updateCount(); //1
+updateCount(); //2
+updateCount(); //3
 
-console.log(z); //?function y
+count = 5;
+updateCount(); //6
+console.log(count);
 
-z(); //? 7
+//!Problem ==> now the problem is we want to count property private currently it is changing from anywhere
+
+//TODO :SOLUTION ex-1
+
+const updateCountwrapper = () => {
+  let _count = 0; //it is private
+  return function updateCount() {
+    _count++;
+    console.log(_count);
+  };
+};
+const updatedCount = updateCountwrapper(); //it will return function
+
+updatedCount(); //1
+updatedCount(); //2
+updatedCount(); //3
+updatedCount(); //4
+
+//todo:ex-2
+
+const CardCounter = () => {
+  let _count = 0;
+  function _updateCount(val) {
+    _count += val;
+  }
+  function _updateCount(val) {
+    _count += val;
+  }
+  return {
+    increment() {
+      _updateCount(1);
+    },
+    decrement() {
+      _updateCount(-1);
+    },
+    value() {
+      return _count;
+    },
+  };
+};
+
+const MyCardCounter = CardCounter();
+MyCardCounter.increment(); //+1
+MyCardCounter.increment(); //+1
+console.log(MyCardCounter.value()); //2

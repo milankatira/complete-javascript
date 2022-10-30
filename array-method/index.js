@@ -120,4 +120,3 @@ console.log(numbers.reduceRight(myFunc))
 
 //TODO REVERSE
 console.log(numbers.reverse())
-

@@ -12,6 +12,11 @@ for (let num = 1; num <= 10; num++) {
 }
 
 
+const frontend="react"
+const backend="node"
+
+console.log(`${frontend} and  ${backend}`) //react and node
+
 // !Object Properties
 
 // ~➡ we can now use Dynamic Properties
@@ -22,14 +27,14 @@ const myBio = {
   [20 + 1]: "is my age"
 }
 
-console.log(myBio);
+console.log(myBio); // { '21': 'is my age', milan: 'hello how are you?' }
 
 console.log("------------------------------------default parameters----------------------------------------------------------")
 //!default parameter 
 function mult(a, b = 5) {
   return a * b;
 }
-console.log(mult(6))
+console.log(mult(6)) //30
 
 console.log("------------------------------------array and fat arrow function----------------------------------------------------------")
 //!array
@@ -43,13 +48,13 @@ console.log(sum());
 console.log("------------------------------------spread operators--------------------------------------------------------------")
 //~Spread Operator
 
-const color = ['red', 'green', 'blue', 'white', 'pink'];
-
 const myColors = ['red', 'green', 'blue', 'white', 'pink', 'yellow', 'black'];
+
+const color = ['red', 'green', 'blue', 'white', 'pink'];
 
 const MyFavColors = [...color, 'yellow', 'black'];
 
-console.log(MyFavColors);
+console.log(MyFavColors); //[ 'red',   'green', 'blue',  'white','pink',  'yellow','black']
 
 
 // !ES7 features

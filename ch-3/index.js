@@ -1,7 +1,8 @@
 //~function
-function sum(){
-  var a = 10, b = 40;
-  var total = a+b;
+function sum() {
+  var a = 10,
+    b = 40;
+  var total = a + b;
   console.log(total);
 }
 //~functoion calling
@@ -12,40 +13,55 @@ function sum(){
 // ! arguments are the real values passed to the function.
 
 //!a,b  parameters
-function sum(a,b){
-  var total = a+b;
+function sum(a, b) {
+  var total = a + b;
   console.log(total);
 }
 
 //!arguments
 sum();
-sum(20,30);
-sum(50,50);
-sum(5,6)
+sum(20, 30);
+sum(50, 50);
+sum(5, 6);
 
-
-function sum(a,b){
-  var total = a+b;
+function sum(a, b) {
+  var total = a + b;
   console.log(total);
 }
 
-var funExp = sum(5,15);
+var funExp = sum(5, 15);
 
-function sum(a,b){
-  return total = a+b;
+function sum(a, b) {
+  return (total = a + b);
 }
 
-var funExp = sum(5,25);
+var funExp = sum(5, 25);
 
-console.log('the sum of two no is ' + funExp );
+console.log("the sum of two no is " + funExp);
 
 //!anonymous functions
 
-var funExp = function(a,b){
-  return total = a+b;
+var funExp = function (a, b) {
+  return (total = a + b);
+};
+
+var sum = funExp(15, 15);
+var sum1 = funExp(20, 15);
+
+console.log(sum > sum1);
+
+//3 way to defined a function
+
+//1)function declaration
+
+function sum(a, b) {
+  return a + b;
 }
 
-var sum = funExp(15,15);
-var sum1 = funExp(20,15);
+//2)function expression
+const sum = function (a, b) {
+  return a + b;
+};
 
-console.log(sum > sum1 );
+//3)Arrow function
+const sum = (a, b) => a + b;
