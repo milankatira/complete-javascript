@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    .div1 {
+      height: 40px;
+      width: 40px;
+      background-color: aqua;
+    }
+
+    .div2 {
+      height: 40px;
+      width: 40px;
+      background-color: red;
+    }
+
+    .div3 {
+      height: 40px;
+      width: 40px;
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Mutation Observer in Javascript</h1>
+  <div class="parent-div" id="elem">
+    <div class="div1">1</div>
+    <div class="div2">2</div>
+    <div class="div3">3</div>
+    <button onclick="deletediv()">delete div</button>
+  </div>
+</body>
+<script>
+  let observer=new MutationObserver((data)=>{
+    console.log(data)
+  })
+
+  observer.observe(elem,{
+    childList:true
+  })
+  function deletediv ()
+  {
+    document.getElementById("elem").children[0].remove();
+  }
+</script>
+
+</html>
