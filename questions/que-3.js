@@ -1,5 +1,4 @@
-//TODO currying 
-
+//TODO currying
 
 // console.log(sum(5)(8)(7)(2))
 
@@ -15,7 +14,7 @@
 
 // sum(5)(10)(9)(11)
 
-const sum = (a)=>(b)=>(c)=>(d)=>a+b+c+d;
+const sum = (a) => (b) => (c) => (d) => a + b + c + d;
 
 const add = sum(5)(10)(15)(17);
 console.log(add);

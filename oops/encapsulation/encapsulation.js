@@ -59,11 +59,8 @@ console.log(myAccount.getBalance());
 
 console.log(myAccount);
 
-console.log(myAccount.balance);
-
 myAccount.balance = 400;
 
-console.log(myAccount);
+// console.log(myAccount);
 
-
-myAccount.takeBussinessLoad(500)
+// myAccount.takeBussinessLoad(500)
