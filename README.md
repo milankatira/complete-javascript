@@ -203,3 +203,47 @@ do {
 } while (num <= 30);
 ```
 
+## Chapter-3 function
+
+### Function 
+#### -Definition
+
+```javascript
+function sum(){
+  var a = 10, b = 40;
+  var total = a+b;
+  console.log(total);
+}
+```
+
+### There are 3 way to define function
+
+#### -1)function definition
+```javascript
+function sum(a, b) {
+  return a + b;
+}
+```
+
+#### -2)function expression
+```javascript
+const sum = function (a, b) {
+  return a + b;
+}
+```
+
+#### -3)arrow function
+```javascript
+const sum = (a, b) => a + b;
+```
+
+#### -Function parament
+#### Function parameters are the names listed in the function's definition.
+#### -Function arguments are the real values passed to the function.
+
+#### -Function currying
+```javascript
+const sum = (a) => (b) => (c) => (d) => a + b + c + d;
+const add = sum(5)(10)(15)(17);
+console.log(add); //47
+```
