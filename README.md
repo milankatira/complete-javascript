@@ -237,7 +237,7 @@ const sum = function (a, b) {
 const sum = (a, b) => a + b;
 ```
 
-####- Function parament
+- Function parament
 #### Function parameters are the names listed in the function's definition.
 #### -Function arguments are the real values passed to the function.
 
