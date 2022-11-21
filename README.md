@@ -583,3 +583,65 @@ console.log(User); //{ name: 'user' }
 [3, 4, 5, 6].findIndex((num) => num > 4); // 2
 [3, 4, 5, 6].reduce((acc, num) => acc + num); //18
 ```
+
+
+## chapter-13 Exception handling
+
+
+- try block
+
+#### The try block can be considered the body of the statement. This is where we execute the regular code.
+
+- catch block
+#### If an exception reaches the try block, then it is assigned to the parameter of the catch clause and the code in that clause is executed. Next, execution normally continues after the try statement.
+
+- finally block
+#### The code inside the finally clause is always executed at the end of a try statement – no matter what happens in the try block or the catch clause
+
+```javascript
+function calculate() {
+  try {
+    const data = sub(3, 4)
+    return data;
+  } catch (err) {
+    console.log(err)
+  }
+}
+
+
+function sub(a, b) {
+  if (b > a) {
+    throw new Error('b should be less than a'); 
+  } else {
+    return b - a;
+  }
+}
+
+calculate()
+```
+
+
+```javascript
+function calculate() {
+  try {
+    const data = sub(3, 4)
+    return data;
+  } catch (err) {
+    console.log(err.message)
+  }
+  finally {
+    console.log("no one can stop me")
+  }
+}
+
+
+function sub(a, b) {
+  if (b > a) {
+    throw new Error('b should be less than a');
+  } else {
+    return b - a;
+  }
+}
+
+calculate()
+```
