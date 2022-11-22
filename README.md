@@ -205,26 +205,27 @@ do {
 ```
 
 - break
+
 ```javascript
 var x = 1;
 while (x < 10) {
   if (x === 5) {
-    break; 
+    break;
   }
   x = x + 1;
-  console.log(x)
+  console.log(x);
 }
 ```
 
 - continue
+
 ```javascript
-while (x < 10)
-{
- x = x + 1;
- if (x === 5){
- continue; 
- }
- console.log(x)
+while (x < 10) {
+  x = x + 1;
+  if (x === 5) {
+    continue;
+  }
+  console.log(x);
 }
 ```
 
@@ -241,6 +242,14 @@ function sum() {
   var total = a + b;
   console.log(total);
 }
+```
+
+- function constaructor
+
+```javascript
+var func = new Function("x", "y", "return x*y;");
+
+console.log(func(2, 4));
 ```
 
 ### There are 3 way to define function
