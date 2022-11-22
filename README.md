@@ -204,11 +204,35 @@ do {
 } while (num <= 30);
 ```
 
+- break
+```javascript
+var x = 1;
+while (x < 10) {
+  if (x === 5) {
+    break; 
+  }
+  x = x + 1;
+  console.log(x)
+}
+```
+
+- continue
+```javascript
+while (x < 10)
+{
+ x = x + 1;
+ if (x === 5){
+ continue; 
+ }
+ console.log(x)
+}
+```
+
 ## Chapter-3 function
 
 ### Function
 
-#### -Definition
+- Definition
 
 ```javascript
 function sum() {
@@ -221,7 +245,7 @@ function sum() {
 
 ### There are 3 way to define function
 
-#### -1)function definition
+- 1)function definition
 
 ```javascript
 function sum(a, b) {
@@ -229,7 +253,7 @@ function sum(a, b) {
 }
 ```
 
-#### -2)function expression
+- 2)function expression
 
 ```javascript
 const sum = function (a, b) {
@@ -237,7 +261,7 @@ const sum = function (a, b) {
 };
 ```
 
-#### -3)arrow function
+- 3)arrow function
 
 ```javascript
 const sum = (a, b) => a + b;
