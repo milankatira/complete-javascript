@@ -12,7 +12,7 @@ abstract concept that hold info about the env. within the current code is being 
 - Code component is the place where code is executed one line at a time. It is also called the `Thread of Execution`.
 
 - JS is a synchronous, single-threaded language
--  - Synchronous:- One command at a time.
--  - Single-threaded:- In a specific synchronous order.
+  - Synchronous:- One command at a time.
+  - Single-threaded:- In a specific synchronous order.
 
-- 
+  
