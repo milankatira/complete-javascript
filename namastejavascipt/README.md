@@ -1,7 +1,5 @@
 # namaste-javascript
 
-this is all lecture not of Akshay saini
-
 ## ch-1 Execution Context
 
 - Everything in JS happens inside the execution context. Imagine a sealed-off container inside which JS runs. It is an
@@ -89,6 +87,7 @@ a();
 ```
 
 ```javascript
+//CASE 3
 function a() {
   c();
   function c() {
@@ -101,6 +100,7 @@ a();
 ```
 
 ```javascript
+//CASE 4
 function a() {
   var b = 10;
   c();
@@ -175,15 +175,15 @@ function z() {
 z(); // 7 900
 ```
 
-```javascript
-*A closure is a function that has access to its outer function scope even after the function has returned.
+
+- A closure is a function that has access to its outer function scope even after the function has returned.
 Meaning, A closure can remember and access variables and arguments reference of its outer function even
 after the function has returned.*
-```
+
 
 - Advantages of Closure:
 
-  - Module Design Pattern
+-  Module Design Pattern
   - Currying
   - Memoize
   - Data hiding and encapsulation
@@ -199,7 +199,7 @@ after the function has returned.*
 - What is Closure in Javascript?
 - A function along with reference to its outer environment together forms a closure. Or in other words, A Closure is a
   combination of a function and its lexical scope bundled together.
-
+<br/>
 - Will the below code still forms a closure?
 
 ```javascript
@@ -217,6 +217,8 @@ outer()(); // 10
 
 - Changing var to let, will it make any difference?
 - It will still behave the same way.
+
+<br/>
 
 - Will inner function have the access to outer function argument?
 
