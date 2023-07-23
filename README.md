@@ -1,798 +1,766 @@
-# complete-javascript
+# Complete JavaScript
 
-complete javascript
+## Chapter-1 Data types and Operators
 
-## Chapter-1 Data types and operators
+### Data types
 
-## data type
-
-### string
+#### String
 
 ```javascript
-var myName = 'milan katira'
-console.log(myName) //milan katira
-console.log(typeof myName) //string
+var myName = 'Milan Katira';
+console.log(myName); // Milan Katira
+console.log(typeof myName); // string
 ```
 
-### number
+#### Number
 
 ```javascript
-var myAge = 21
-console.log(myAge) //21
-console.log(typeof myAge) //number
+var myAge = 21;
+console.log(myAge); // 21
+console.log(typeof myAge); // number
 ```
 
-### boolean
+#### Boolean
 
 ```javascript
-var iAm = false
-console.log(iAm) //false
-console.log(typeof iAm) //boolean
+var iAm = false;
+console.log(iAm); // false
+console.log(typeof iAm); // boolean
 ```
 
-### object
+#### Object
 
 ```javascript
 const data = {
-  frontend: 'react',
-  backend: 'node',
-}
-console.log(typeof data)
+  frontend: 'React',
+  backend: 'Node',
+};
+console.log(typeof data); // object
 ```
 
-### array
+#### Array
 
 ```javascript
-const myData = ['nextjs', '13']
-console.log(typeof myData) //object
+const myData = ['Next.js', '13'];
+console.log(typeof myData); // object
 ```
 
-## operators
+### Operators
 
-### Assignment operators
+#### Assignment Operators
 
 ```javascript
-var a = 5
-var b = 10
-var c = b
+var a = 5;
+var b = 10;
+var c = b;
 
-c += 2
-console.log(c) //12
+c += 2;
+console.log(c); // 12
 
-c -= 2
-console.log(c) //10
+c -= 2;
+console.log(c); // 10
 
-c *= 2
-console.log(c) //20
+c *= 2;
+console.log(c); // 20
 
-c /= 2
-console.log(c) //10
+c /= 2;
+console.log(c); // 10
 ```
 
-### Arithmatic operators
+#### Arithmetic Operators
 
 ```javascript
-console.log(10 + 3) //13
-console.log(10 - 3) //7
-console.log(10 * 3) //30
-console.log(10 / 3) //3.33...
-console.log(10 % 3) //1 (remainder)
+console.log(10 + 3); // 13
+console.log(10 - 3); // 7
+console.log(10 * 3); // 30
+console.log(10 / 3); // 3.33...
+console.log(10 % 3); // 1 (remainder)
 ```
 
-### Comparison operator
+#### Comparison Operators
 
 ```javascript
-var x = 5
-var y = 6
-console.log(5 == 6) //false
-console.log(5 == '5') //true
-console.log(5 == 5) //true
-console.log(5 === '5') //false
-console.log(5 === 5) //true
-console.log(5 >= 6) //false
-console.log(5 <= 6) //true
-console.log(5 > 6) //false
-console.log(5 < 6) //true
+var x = 5;
+var y = 6;
+console.log(5 == 6); // false
+console.log(5 == '5'); // true
+console.log(5 == 5); // true
+console.log(5 === '5'); // false
+console.log(5 === 5); // true
+console.log(5 >= 6); // false
+console.log(5 <= 6); // true
+console.log(5 > 6); // false
+console.log(5 < 6); // true
 ```
 
-### logical AND operator
+#### Logical AND Operator
 
 ```javascript
-console.log(true && true) //true
-console.log(true && false) //false
-console.log(false && true) //false
-console.log(false && false) //false
+console.log(true && true); // true
+console.log(true && false); // false
+console.log(false && true); // false
+console.log(false && false); // false
 ```
 
-### logical OR operator
+#### Logical OR Operator
 
 ```javascript
-console.log(true || true) //true
-console.log(true || false) //true
-console.log(false || true) //true
-console.log(false || false) //false
+console.log(true || true); // true
+console.log(true || false); // true
+console.log(false || true); // true
+console.log(false || false); // false
 ```
 
-### logical NOT operator
+#### Logical NOT Operator
 
 ```javascript
-console.log(!false) //true
-console.log(!true) //false
+console.log(!false); // true
+console.log(!true); // false
 ```
 
-### postfix operators
+#### Postfix Operators
 
 ```javascript
-var num = 15
-var newNum = num-- + 5
-console.log(num) //14
-console.log(newNum) //20
+var num = 15;
+var newNum = num-- + 5;
+console.log(num); // 14
+console.log(newNum); // 20
 ```
 
-### prefix operators
+#### Prefix Operators
 
 ```javascript
-var num = 15
-var newNum = --num + 5
-console.log(num) //14
-console.log(newNum) //19
+var num = 15;
+var newNum = --num + 5;
+console.log(num); // 14
+console.log(newNum); // 19
 ```
 
-## Chapter-2 loop
+## Chapter-2 Loop
 
-### if else statement
+### if-else Statement
 
 ```javascript
-const framework = 'react'
+const framework = 'react';
 
 if (framework === 'react') {
-  console.log('frontend')
+  console.log('frontend');
 } else if (framework === 'node') {
-  console.log('backend')
+  console.log('backend');
 } else {
-  console.log('i don`t know')
+  console.log('I don\'t know');
 }
 ```
 
-### Switch case statement
+### Switch Case Statement
 
 ```javascript
-const framework = 'react'
+const framework = 'react';
 
 switch (framework) {
   case 'react':
-    console.log('frontend')
-    break
+    console.log('frontend');
+    break;
   case 'node':
-    console.log('backend')
-    break
+    console.log('backend');
+    break;
   default:
-    console.log('i don`t know')
+    console.log('I don\'t know');
 }
 ```
 
-### Ternary operator
+### Ternary Operator
 
 ```javascript
-var age = 18
-console.log(age >= 18 ? 'you can vote' : "you can't vote")
+var age = 18;
+console.log(age >= 18 ? 'You can vote' : 'You can\'t vote');
 ```
 
-### While loop
-
-#### It will first meet the condition and then run logic
+### While Loop
 
 ```javascript
-var num = 20
-// block scope
+var num = 20;
+
 while (num <= 30) {
-  console.log(num) //infinite loop
-  num++
+  console.log(num);
+  num++;
 }
 ```
 
-### Do-while loop
-
-#### First time execute the logic and then meet the condition
+### Do-While Loop
 
 ```javascript
-var num = 20
+var num = 20;
+
 do {
-  debugger
-  console.log(num) //infinite loop
-  num++
-} while (num <= 30)
+  console.log(num);
+  num++;
+} while (num <= 30);
 ```
 
-- break
+### Break
 
 ```javascript
-var x = 1
+var x = 1;
+
 while (x < 10) {
   if (x === 5) {
-    break
+    break;
   }
-  x = x + 1
-  console.log(x)
+  x = x + 1;
+  console.log(x);
 }
 ```
 
-- continue
+### Continue
 
 ```javascript
+var x = 1;
+
 while (x < 10) {
-  x = x + 1
+  x = x + 1;
   if (x === 5) {
-    continue
+    continue;
   }
-  console.log(x)
+  console.log(x);
 }
 ```
 
-## Chapter-3 function
+## Chapter-3 Function
 
 ### Function
 
-- Definition
+#### Function Definition
 
 ```javascript
 function sum() {
-  var a = 10,
-    b = 40
-  var total = a + b
-  console.log(total)
+  var a = 10;
+  var b = 40;
+  var total = a + b;
+  console.log(total);
 }
 ```
 
-- function constaructor
+#### Function Constructor
 
 ```javascript
-var func = new Function('x', 'y', 'return x*y;')
+var func = new Function('x', 'y', 'return x * y;');
 
-console.log(func(2, 4))
+console.log(func(2, 4));
 ```
 
-### There are 3 way to define function
+### There are 3 ways to define a function
 
-- 1)function definition
+#### 1) Function Definition
 
 ```javascript
 function sum(a, b) {
-  return a + b
+  return a + b;
 }
 ```
 
-- 2)function expression
+#### 2) Function Expression
 
 ```javascript
 const sum = function (a, b) {
-  return a + b
-}
+  return a + b;
+};
 ```
 
-- 3)arrow function
+#### 3) Arrow Function
 
 ```javascript
-const sum = (a, b) => a + b
+const sum = (a, b) => a + b;
 ```
 
-- Function parament
-  Function parameters are the names listed in the function's definition.
+### Function Parameters
 
-- Function arguments are the real values passed to the function.
+Function parameters are the names listed in the function's definition.
 
-- Function currying
+### Function Arguments
+
+Function arguments are the real values passed to the function.
+
+### Function Currying
 
 ```javascript
 const sum = (a) => (b) => (c) => (d) => a + b + c + d;
 const add = sum(5)(10)(15)(17);
 
-console.log(add); //47
+console.log(add); // 47
 ```
-- inifinite currying
+
+### Infinite Currying
+
 ```javascript
-function infiniteSum (a){
-  return function (b){
-    if(b) return infiniteSum(a+b);
+function infiniteSum(a) {
+  return function (b) {
+    if (b) return infiniteSum(a + b);
     return a;
-  }
+  };
 }
 
-console.log(infiniteSum(7)(8)())//15
+console.log(infiniteSum(7)(8)()); // 15
 ```
 
-- function
+### Call, Apply, and Bind
 
-#### The call() method is a predefined JavaScript method.
-
-#### It can be used to invoke (call) a method with an owner object as an argument (parameter).
+#### The `call()` method is a predefined JavaScript method that can be used to invoke (call) a method with an owner object as an argument (parameter).
 
 ```javascript
 const person = {
   fullName: function () {
-    return this.firstName + ' ' + this.lastName
+    return this.firstName + ' ' + this.lastName;
   },
-}
+};
 
 const myname = {
   fullName: function (person) {
-    return person.firstName + ' ' + person.lastName
+    return person.firstName + ' ' + person.lastName;
   },
-}
-const person1 = {
-  firstName: 'John',
-  lastName: 'Doe',
-}
-
-console.log(person.fullName.call(person1)) //John Doe
-console.log(myname.fullName(person1)) //John Doe
-console.log(person.fullName.apply(person1)) //John Doe
-```
-
-#### bind and apply with argument
-
-```javascript
-const person = {
-  fullName: function (city, country) {
-    return this.firstName + ' ' + this.lastName + ',' + city + ',' + country
-  },
-}
+};
 
 const person1 = {
   firstName: 'John',
   lastName: 'Doe',
-}
+};
 
-console.log(person.fullName.apply(person1, ['Oslo', 'Norway'])) //John Doe,Oslo,Norway
-console.log(person.fullName.call(person1, 'Oslo', 'Norway')) //John Doe,Oslo,Norway
+console.log(person.fullName.call(person1)); // John Doe
+console.log(myname.fullName(person1)); // John Doe
+console.log(person.fullName.apply(person1)); // John Doe
 
-let fullName = person.fullName.bind(person1)
+let fullName = person.fullName.bind(person1);
 
-console.log(fullName()) //John Doe,
+console.log(fullName()); // John Doe
 ```
 
-#### The call() method `takes arguments separately.`
+#### In the `call()` method, arguments are passed separately.
 
-#### The apply() method `takes arguments as an array.`
+#### In the `apply()` method, arguments are passed as an array.
 
-#### In the bind() method, an `object can borrow a method from another object.`
+#### In the `bind()` method, an object can borrow a
 
-## Chapter-4 features of ES6
+ method from another object.
 
-- 1)let var const
-- 2)template literals
-- 3)dynamic object property
-- 4)default parameter
-- 5)fat arrow function
-- 6)spread operator
+## Chapter-4 Features of ES6
 
-#### 1)Let var and const
+#### 1) let, var, and const
 
-- Var - function scope
-- Let const - block scope
+- `var` - Function scope
+- `let` and `const` - Block scope
 
-#### 2)template literals
+#### 2) Template Literals
 
 ```javascript
-const frontend = 'react'
-const backend = 'node'
-console.log(`${frontend} and  ${backend}`) //react and node
+const frontend = 'React';
+const backend = 'Node';
+console.log(`${frontend} and ${backend}`); // React and Node
 ```
 
-#### 3)dynamic object property
+#### 3) Dynamic Object Property
 
 ```javascript
-let myName = 'milan'
+let myName = 'Milan';
 const myBio = {
-  [myName]: 'hello how are you?',
+  [myName]: 'Hello, how are you?',
   [20 + 1]: 'is my age',
-}
-console.log(myBio) // { '21': 'is my age', milan: 'hello how are you?' }
+};
+console.log(myBio); // { '21': 'is my age', Milan: 'Hello, how are you?' }
 ```
 
-#### 4)default parameter
+#### 4) Default Parameters
 
 ```javascript
 function mult(a, b = 5) {
-  return a * b
+  return a * b;
 }
 
-console.log(mult(6)) //30
+console.log(mult(6)); // 30
 ```
 
-#### 5)fat arrow function
+#### 5) Fat Arrow Function
 
 ```javascript
-const sum = (a, b) => a + b
+const sum = (a, b) => a + b;
 ```
 
-#### 6)spread oprator
+#### 6) Spread Operator
 
 ```javascript
-const color = ['red', 'green', 'blue', 'white', 'pink']
-const MyFavColors = [...color, 'yellow', 'black']
-console.log(MyFavColors) //[ 'red',   'green', 'blue',  'white','pink',  'yellow','black']
+const color = ['red', 'green', 'blue', 'white', 'pink'];
+const MyFavColors = [...color, 'yellow', 'black'];
+console.log(MyFavColors); // ['red', 'green', 'blue', 'white', 'pink', 'yellow', 'black']
 ```
 
-## Chapter-5 string method
+## Chapter-5 String Methods
 
-#### 1)escape character
+#### 1) Escape Character
 
 ```javascript
-let anySentence = 'We are the so-called "Vikings" from the north.'
-console.log(anySentence) //We are the so-called "Vikings" from the north.
+let anySentence = 'We are the so-called "Vikings" from the north.';
+console.log(anySentence); // We are the so-called "Vikings" from the north.
 ```
 
-#### 2)Finding method
+#### 2) Finding Methods
 
-- 1)index of
+- Index Of
 
 ```javascript
-const myData = 'hello i am milan'
-console.log(myData.indexOf('am')) //8
+const myData = 'hello i am milan';
+console.log(myData.indexOf('am')); // 8
 ```
 
-- 2)last index of
+- Last Index Of
 
 ```javascript
-const paragraph =
-  'The quick brown fox jumps over the lazy dog. If the dog barked, was it really lazy?'
-const searchTerm = 'dog'
-console.log(
-  `The index of the first "${searchTerm}" from the end is ${paragraph.lastIndexOf(
-    searchTerm,
-    52,
-  )}`,
-)
-//"The index of the first "dog" from the end is 52"
+const paragraph = 'The quick brown fox jumps over the lazy dog. If the dog barked, was it really lazy?';
+const searchTerm = 'dog';
+console.log(`The index of the first "${searchTerm}" from the end is ${paragraph.lastIndexOf(searchTerm, 52)}`);
+// "The index of the first "dog" from the end is 52"
 ```
 
-- 3)search
+- Search
 
 ```javascript
-const myBioData = 'I am the mk Technical'
-let sData = myBioData.search('Technical')
-console.log(sData) //12
+const myBioData = 'I am the mk Technical';
+let sData = myBioData.search('Technical');
+console.log(sData); // 12
 ```
 
-#### 3)string slicing
+#### 3) String Slicing
 
 ```javascript
-var str = 'my name is milan'
-let res = str.slice(0, 4)
-console.log(res) //my n
+var str = 'my name is milan';
+let res = str.slice(0, 4);
+console.log(res); // my n
 ```
 
-#### 4)charter at
+#### 4) CharAt
 
 ```javascript
-let str_1 = 'HELLO WORLD'
-console.log(str_1.charAt(9)) //L
+let str_1 = 'HELLO WORLD';
+console.log(str_1.charAt(9)); // L
 ```
 
-#### 5)accessing values
+#### 5) Accessing Values
 
 ```javascript
-var str = 'HELLO WORLD'
-console.log(str[1]) //E
+var str = 'HELLO WORLD';
+console.log(str[1]); // E
 ```
 
-#### 6)case changing
+#### 6) Case Changing
 
 ```javascript
-let Name = 'milan katira'
-console.log(Name.toUpperCase()) //MILAN KATIRA
-console.log(Name.toLowerCase()) //milan katira
+let Name = 'milan katira';
+console.log(Name.toUpperCase()); // MILAN KATIRA
+console.log(Name.toLowerCase()); // milan katira
 ```
 
-#### 7)concationation
+#### 7) Concatenation
 
 ```javascript
-console.log(fName.concat(' ', lName)) //milan katira
+console.log(fName.concat(' ', lName)); // milan katira
 ```
 
-#### 8)trim
+#### 8) Trim
 
 ```javascript
-var str = '              Hello         World!            '
-console.log(str.trim()) //hello        world!
+var str = '              Hello         World!            ';
+console.log(str.trim()); // hello        world!
 ```
 
-#### 9)split
+#### 9) Split
 
 ```javascript
-var txt = 'a, b,c d,e'
-console.log(txt.split(',')) //['a', ' b', 'c d', 'e']
+var txt = 'a, b,c d,e';
+console.log(txt.split(',')); // ['a', ' b', 'c d', 'e']
 ```
 
-## Chapter-6 Date and time
+## Chapter-6 Date and Time
 
-#### Get time
+#### Get Time
 
 ```javascript
-console.log(new Date()) //2022-10-30T04:41:54.992Z
-console.log(new Date().toLocaleString()) //10/30/2022, 10:11:54 AM
-console.log(new Date().toString()) //Sun Oct 30 2022 10:11:55 GMT+0530 (India Standard Time)
-console.log(Date.now()) //1667104915026
+console.log(new Date()); // 2022-10-30T04:41:54.992Z
+console.log(new Date().toLocaleString()); // 10/30/2022, 10:11:54 AM
+console.log(new Date().toString()); // Sun Oct 30 2022 10:11:55 GMT+0530 (India Standard Time)
+console.log(Date.now()); // 1667104915026
 ```
 
-#### Get year month date day
+#### Get Year, Month, Date, and Day
 
 ```javascript
-const curDate = new Date()
-console.log(curDate.getFullYear()) //2022
-console.log(curDate.getMonth()) //9
-console.log(curDate.getDate()) //30
-console.log(curDate.getDay()) //0
+const curDate = new Date();
+console.log(curDate.getFullYear()); // 2022
+console.log(curDate.getMonth()); // 9
+console.log(curDate.getDate()); // 30
+console.log(curDate.getDay()); // 0 (Sunday)
 ```
 
-## Chapter-7 Math in javascript
+## Chapter-7 Math in JavaScript
 
 ```javascript
-console.log(Math.PI) //3.1415...
-console.log(Math.round(Math.PI)) //3
+console.log(Math.PI); // 3.1415...
+console.log(Math.round(Math.PI)); // 3
 
-console.log(Math.pow(2, 3)) //8
-console.log(2 ** 3) //8
-console.log(Math.sqrt(25)) //5
+console.log(Math.pow(2, 3)); // 8
+console.log(2 ** 3); // 8
+console.log(Math.sqrt(25)); // 5
 
-console.log(Math.abs(-55)) //55
-console.log(Math.ceil(4.51)) //5
-console.log(Math.round(4.51)) //5
-console.log(Math.ceil(99.01)) //100
-console.log(Math.round(99.1)) //99
-console.log(Math.floor(4.7)) //4
-console.log(Math.floor(99.1)) //99
-console.log(Math.trunc(4.6)) //4
-console.log(Math.trunc(-99.1)) //-99
+console.log(Math.abs(-55)); // 55
+console.log(Math.ceil(4.51)); // 5
+console.log(Math.round(4.51)); // 5
+console.log(Math.ceil(99.01)); // 100
+console.log(Math.round(99.1)); // 99
+console.log(Math.floor(4.7)); // 4
+console.log(Math.floor(99.1)); // 99
+console.log(Math.trunc(4.6)); // 4
+console.log(Math.trunc(-99.1)); // -99
 
-console.log(Math.min(0, 150, 30, 20, -8, -200)) //-200
-console.log(Math.max(0, 150, 30, 20, -8, -200)) //150
+console.log(Math.min(0, 150, 30, 20, -8, -200)); // -200
+console.log(Math.max(0, 150, 30, 20, -8, -200)); // 150
 ```
 
-## Chapter-8 Clouser
+## Chapter-8 Closure
 
-- A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function.
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function.
 
 #### Example
 
 ```javascript
 const updateCountwrapper = () => {
-  let _count = 0 //it is private
+  let _count = 0; // It is private
   return function updateCount() {
-    _count++
-    console.log(_count)
-  }
-}
-const updatedCount = updateCountwrapper() //it will return function
-updatedCount() //1
-updatedCount() //2
-updatedCount() //3
-updatedCount() //4
+    _count++;
+    console.log(_count);
+  };
+};
+
+const updatedCount = updateCountwrapper(); // It will return a function
+updatedCount(); // 1
+updatedCount(); // 2
+updatedCount(); // 3
+updatedCount(); // 4
 ```
 
 ```javascript
 const CardCounter = () => {
-  let _count = 0
+  let _count = 0;
   function _updateCount(val) {
-    _count += val
-  }
-  function _updateCount(val) {
-    _count += val
+    _count += val;
   }
   return {
     increment() {
-      _updateCount(1)
+      _updateCount(1);
     },
     decrement() {
-      _updateCount(-1)
+      _updateCount(-1);
     },
     value() {
-      return _count
+      return _count;
     },
-  }
-}
-const MyCardCounter = CardCounter()
-MyCardCounter.increment() //+1
-MyCardCounter.increment() //+1
-console.log(MyCardCounter.value()) //2
+  };
+};
+
+const MyCardCounter = CardCounter();
+MyCardCounter.increment(); // +1
+MyCardCounter.increment(); // +1
+console.log(MyCardCounter.value()); // 2
 ```
 
 ## Chapter-9 Hoisting
 
 ```javascript
-getName() //namaste javascript
-console.log(x) //undefined
+getName(); // "Namaste JavaScript"
+console.log(x); // undefined
 
-var x = 7
+var x = 7;
 
 function getName() {
-  console.log('namaste javascript')
+  console.log('Namaste JavaScript');
 }
 ```
 
-## Chapter-11 shallow copy and deep copy
+## Chapter-11 Shallow Copy and Deep Copy
 
-- Shallow copy
-  In Shallow copy, a copy of the original object is stored and only the reference address is finally copied.
+- Shallow Copy: In a shallow copy, a copy of the original object is stored, and only the reference address is finally copied.
 
-- Deep copy
-  In Deep copy, the copy of the original object and the repetitive copies both are stored.
+- Deep Copy:
+
+ In a deep copy, the copy of the original object and the repetitive copies both are stored.
 
 ```javascript
 const User = {
   name: 'user',
-}
+};
 
-// const adm = Object.assign({}, User); //shallow copy
-// const adm = { ...User }; //shallow copy
-const adm = JSON.parse(JSON.stringify(User)) //deepcopy
+// Shallow copy
+const adm = Object.assign({}, User);
+// const adm = { ...User };
+// const adm = JSON.parse(JSON.stringify(User)); // Deep copy
 
-adm.name = 'adm'
-console.log(User) //{ name: 'user' }
+adm.name = 'adm';
+console.log(User); // { name: 'user' }
 ```
 
-## Chapter-12 array
+## Chapter-12 Arrays
 
 ```javascript
-;[3, 4, 5, 6].at(1) // 4
-;[3, 4, 5, 6].pop() // [3, 4, 5]
-;[3, 4, 5, 6].push(7) // [3, 4, 5, 6, 7]
-;[3, 4, 5, 6].fill(1) // [1, 1, 1, 1]
-;[3, 4, 5, 6].join('-') // '3-4-5-6'
-;[3, 4, 5, 6].shift() // [4, 5, 6]
-;[3, 4, 5, 6].reverse() // [6, 5, 4, 3]
-;[3, 4, 5, 6].unshift(1) // [1, 3, 4, 5, 6]
-;[3, 4, 5, 6].includes(5) // true
-;[3, 4, 5, 6].map((num) => num + 6) // [9, 10, 11, 12]
-;[3, 4, 5, 6].find((num) => num > 4) // 5
-;[3, 4, 5, 6].some((num) => num > 5) //true
-;[3, 4, 5, 6].filter((num) => num > 4) // [5, 6]
-;[3, 4, 5, 6].every((num) => num > 5) // false
-;[3, 4, 5, 6].findIndex((num) => num > 4) // 2
-;[3, 4, 5, 6].reduce((acc, num) => acc + num) //18
+[3, 4, 5, 6].at(1); // 4
+[3, 4, 5, 6].pop(); // [3, 4, 5]
+[3, 4, 5, 6].push(7); // [3, 4, 5, 6, 7]
+[3, 4, 5, 6].fill(1); // [1, 1, 1, 1]
+[3, 4, 5, 6].join('-'); // '3-4-5-6'
+[3, 4, 5, 6].shift(); // [4, 5, 6]
+[3, 4, 5, 6].reverse(); // [6, 5, 4, 3]
+[3, 4, 5, 6].unshift(1); // [1, 3, 4, 5, 6]
+[3, 4, 5, 6].includes(5); // true
+[3, 4, 5, 6].map((num) => num + 6); // [9, 10, 11, 12]
+[3, 4, 5, 6].find((num) => num > 4); // 5
+[3, 4, 5, 6].some((num) => num > 5); // true
+[3, 4, 5, 6].filter((num) => num > 4); // [5, 6]
+[3, 4, 5, 6].every((num) => num > 5); // false
+[3, 4, 5, 6].findIndex((num) => num > 4); // 2
+[3, 4, 5, 6].reduce((acc, num) => acc + num); // 18
 ```
 
-## chapter-13 Exception handling
+## Chapter-13 Exception Handling
 
-- try block
+- `try` block: The try block contains the code that might generate an exception.
 
-#### The try block can be considered the body of the statement. This is where we execute the regular code.
+- `catch` block: If an exception occurs in the try block, it is caught in the catch block, and appropriate actions can be taken.
 
-- catch block
-
-#### If an exception reaches the try block, then it is assigned to the parameter of the catch clause and the code in that clause is executed. Next, execution normally continues after the try statement.
-
-- finally block
-
-#### The code inside the finally clause is always executed at the end of a try statement – no matter what happens in the try block or the catch clause
+- `finally` block: The finally block contains code that will be executed regardless of whether an exception was thrown or caught.
 
 ```javascript
 function calculate() {
   try {
-    const data = sub(3, 4)
-    return data
+    const data = sub(3, 4);
+    return data;
   } catch (err) {
-    console.log(err)
+    console.log(err);
   }
 }
 
 function sub(a, b) {
   if (b > a) {
-    throw new Error('b should be less than a')
+    throw new Error('b should be less than a');
   } else {
-    return b - a
+    return b - a;
   }
 }
 
-calculate()
+calculate();
 ```
 
 ```javascript
 function calculate() {
   try {
-    const data = sub(3, 4)
-    return data
+    const data = sub(3, 4);
+    return data;
   } catch (err) {
-    console.log(err.message)
+    console.log(err.message);
   } finally {
-    console.log('no one can stop me')
+    console.log('No one can stop me');
   }
 }
 
 function sub(a, b) {
   if (b > a) {
-    throw new Error('b should be less than a')
+    throw new Error('b should be less than a');
   } else {
-    return b - a
+    return b - a;
   }
 }
 
-calculate()
+calculate();
 ```
 
-## chapter-14 async javascript
+## Chapter-14 Async JavaScript
 
-#### promise
+#### Promise
 
 ```javascript
 let myPromise = new Promise(function (myResolve, myReject) {
-  let x = 0
+  let x = 0;
 
   if (x == 0) {
-    myResolve('OK')
+    myResolve('OK');
   } else {
-    myReject('Error')
+    myReject('Error');
   }
-})
+});
 
-myPromise.then((res) => console.log(res)).catch((err) => console.log(err))
+myPromise.then((res) => console.log(res)).catch((err) => console.log(err));
 ```
 
-#### await async
+#### Await/Async
 
 ```javascript
 const data = async function myFunction() {
-  return 'Hello'
-}
+  return 'Hello';
+};
 
 const datas = function myFunction() {
-  return Promise.resolve('Hello')
-}
+  return Promise.resolve('Hello');
+};
 
-console.log(data()) //promise
-console.log(datas()) //promise
+console.log(data()); // Promise
+console.log(datas()); // Promise
 
-data().then((res) => console.log(res))
+data().then((res) => console.log(res));
 
 function myFunction() {
-  return 'Hello'
+  return 'Hello';
 }
 
-console.log(myFunction())
+console.log(myFunction());
 ```
 
-#### promise all
+#### Promise.all
 
 ```javascript
-const promise1 = Promise.resolve(3)
-const promise2 = 42
+const promise1 = Promise.resolve(3);
+const promise2 = 42;
 const promise3 = async () => {
-  return 'data'
-}
+  return 'data';
+};
+
 Promise.all([promise1, promise2, promise3()]).then((values) => {
-  console.log(values)
-})
+  console.log(values);
+});
 ```
 
-#### promise resolve
+#### Promise.resolve
 
 ```javascript
 const promise3 = async () => {
-  return 'data'
-}
+  return 'data';
+};
+
 Promise.resolve(promise3()).then((values) => {
-  console.log(values)
-})
+  console.log(values);
+});
 ```
 
-#### ch-15 generator function
+## Chapter-15 Generator Function
 
 ```javascript
 function* simpleGenerator() {
-  console.log('function called')
-  yield 'first step'
-  let x = 40
-  yield x
-  yield 'last step'
+  console.log('Function called');
+  yield 'first step';
+  let x = 40;
+  yield x;
+  yield 'last step';
 }
 
-let sG = simpleGenerator()
-console.log(sG.next())
-console.log(sG.next())
-console.log(sG.next())
-console.log(sG.next())
-// function called
+let sG = simpleGenerator();
+console.log(sG.next());
+console.log(sG.next());
+console.log(sG.next());
+console.log(sG.next());
+// Function called
 // { value: 'first step', done: false }
 // { value: 40, done: false }
 // { value: 'last step', done: false }
