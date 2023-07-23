@@ -582,6 +582,87 @@ function getName() {
 }
 ```
 
+I apologize for the oversight. Let's cover Chapter-10: Object Destructuring.
+
+## Chapter-10 Object Destructuring
+
+Object destructuring is a convenient way to extract properties from an object and assign them to variables. It allows you to create shorter and more readable code when working with objects.
+
+#### Example:
+
+```javascript
+const user = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 30,
+  email: 'john@example.com',
+};
+
+// Destructuring the object
+const { firstName, lastName, age, email } = user;
+
+console.log(firstName); // John
+console.log(lastName); // Doe
+console.log(age); // 30
+console.log(email); // john@example.com
+```
+
+#### Renaming Variables:
+
+You can also rename the variables while destructuring:
+
+```javascript
+const { firstName: fName, lastName: lName, age: userAge, email: userEmail } = user;
+
+console.log(fName); // John
+console.log(lName); // Doe
+console.log(userAge); // 30
+console.log(userEmail); // john@example.com
+```
+
+#### Default Values:
+
+If the property is not present in the object, you can assign a default value to the variable during destructuring:
+
+```javascript
+const userWithoutEmail = {
+  firstName: 'Alice',
+  lastName: 'Smith',
+  age: 25,
+};
+
+const { firstName, lastName, age, email = 'No email provided' } = userWithoutEmail;
+
+console.log(firstName); // Alice
+console.log(lastName); // Smith
+console.log(age); // 25
+console.log(email); // No email provided
+```
+
+#### Nested Object Destructuring:
+
+You can also destructure nested objects:
+
+```javascript
+const student = {
+  name: 'John',
+  age: 20,
+  contact: {
+    email: 'john@example.com',
+    phone: '123-456-7890',
+  },
+};
+
+const { name, age, contact: { email, phone } } = student;
+
+console.log(name); // John
+console.log(age); // 20
+console.log(email); // john@example.com
+console.log(phone); // 123-456-7890
+```
+
+Destructuring is a powerful feature that simplifies working with objects in JavaScript, making the code more concise and readable.
+
 ## Chapter-11 Shallow Copy and Deep Copy
 
 - Shallow Copy: In a shallow copy, a copy of the original object is stored, and only the reference address is finally copied.
